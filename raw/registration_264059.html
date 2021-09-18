@@ -1,0 +1,1158 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+   
+    	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	
+    	
+        <title>
+        	Lobbyists Registry Application
+        	
+            
+            	 
+            
+        </title>
+        
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        
+        
+        <meta name="dc.title" content="Office of the Lobbyist Registrar, Manitoba"/>
+        <meta name="dc.description" content="The website for the Office of the Lobbyist Registrar, Manitoba"/>
+        <meta name="dc.keywords" content=""/>
+        <meta name="dc.creator" content="Office of the Lobbyist Registrar, Manitoba"/>
+        <meta name="dc.publisher" content="Province of Manitoba"/>
+        <meta name="dc.audience" content="Public"/>
+        <meta name="dc.theme" content="Government Operations"/>
+        <meta name="dc.date.created" content="$LastChangedDate: 2010-11-18 17:19:22 -0800 (Thu, 18 Nov 2010) $"/>
+        <meta name="dc.date.modified" content="$LastChangedDate: 2010-11-18 17:19:22 -0800 (Thu, 18 Nov 2010) $"/>
+        
+        <!--[if lte IE 7]>
+			<script type="text/javascript">
+    			location.replace("/lra/badIE.jsp");
+  			</script>
+		<![endif]-->
+        
+         <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="/lra/scripts/jquery-1.8.3.min.js"></script>
+        
+         	       
+        <script type="text/javascript" src="/lra/scripts/jquery.reject.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/lra/css/jquery.reject.css" media="all"/>
+        
+         
+        <script type="text/javascript">
+        $(document).ready(function () {
+        	$.reject({
+        		reject: {
+        			chrome: 35,
+        			firefox: 20,
+        			safari: 5.0,
+        			unknown: true
+        		},
+        		close: false,  
+        		header: '<center><font color="#AA3842">Your browser is out of date, and may not be compatible with our website.</font><br><i>&nbsp;&nbsp;Votre navigateur n\'est pas à jour. Il se peut qu\'il ne soit pas compatible avec notre site Web.</i></center>',
+        		paragraph1: '',
+                paragraph2: '<center><font color="#AC001C">Click on any icon below to be taken to the download page for the latest version of that browser.</font><br><i>Veuillez cliquer sur l\'icône ci-dessous correspondant à votre navigateur afin de le mettre à jour.</i></center>', 
+				display: ['msie', 'chrome','firefox','safari'],  
+				imagePath: '/lra/images/browsers/'
+        	}); 
+        });
+        </script>
+        
+        
+        
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="/lra/css/main.css" type="text/css" media="all" id="mainCSS">
+        <link rel="stylesheet" type="text/css" href="/lra/css/layout.css" media="all">
+        <link rel="alternate stylesheet" type="text/css" href="/lra/css/layout_1024.css" title="1024 x 768">
+        
+        <style type="text/css" media="all">
+        	@import "/lra/css/application.css";
+        </style>
+        <style type="text/css" media="print">
+        	@import "/lra/css/print.css";
+        </style>
+        
+        
+       
+        
+   
+        <script type="text/javascript" src="/lra/scripts/global.js"></script>
+        <script type="text/javascript" src="/lra/scripts/textSizer.js"></script>
+        <script type="text/javascript" src="/lra/scripts/format_printPage.js"></script>
+        
+        <script type="text/javascript" src="/lra/scripts/menu.js"></script>
+        <script type="text/javascript" src="/lra/scripts/resolution.js"></script>
+        <script type="text/javascript" src="/lra/scripts/application.js"></script>
+        <script type="text/javascript" src="/lra/scripts/js.cookie.js"></script>
+        <script type="text/javascript" src="/lra/scripts/jquery.tablesorter.min.js"></script>
+
+        
+        
+        
+        <script src="/lra/scripts/mtp_1.10.min.js"></script>
+        <script> var mtp_error_page = "/lra/common/multipageError.do"; </script>
+          
+      
+    </head>
+
+
+	<body onload="" id="twoColumn">
+
+
+        <div id="wrapper"> 
+			<a name="top"></a>
+			<p id="navigationAid"><a href="#navigation">Skip to Quick Links</a> | <a href="#mainContent">Skip to Main Content</a> | <a href="http://www.gov.mb.ca/dio/access/procedures.html">Accessibility Statement</a></p>
+          	
+          	
+			
+
+
+
+
+
+
+
+
+<!-- START header -->
+<div id="header">
+<table cellspacing="0" margin="0" padding="0" style="height: 172px; width: 100%;" background="/lra/images/banners/manitoba_bannerjun2011_900_172.jpg" id="header-tile">
+	<tr style="height:95%">
+		<td style="width: 89%;"></td>
+		<td style="width: 11%; vertical-align:bottom">
+		
+		
+		</td>
+	</tr>
+	<tr style="height:5%">
+	    <td>&nbsp;
+	    </td>
+	</tr>
+</table>
+</div>
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- START left-side column -->
+<div id="leftColumn">
+
+    <div id="primaryMenu" onClick="onMenuClick(event)">
+    
+      <h3 class="textHide">Contents</h3>
+      
+      <ul>
+        <li id="MinistryLink">Lobbyists Registry</li>
+      </ul>
+      
+    </div>
+ 
+    
+	<div class="whiteMenu">
+		<ul class="parent" compact>
+			<li class="morelinks" id="menu0"><a href="/lra/index.do">Home</a></li>
+		
+			
+		     
+			
+						
+			
+			
+			
+			
+	
+		</ul>
+	</div>
+	 <div class="grayMenuTabSection grayMenu">
+      <h3>Related Links</h3>
+      <ul>
+        <li><a href="javascript:openWindowFull('http://www.gov.mb.ca/legislature')">Legislative Assembly of Manitoba</a></li>
+        <li><a href="javascript:openWindowFull('http://www.gov.mb.ca/')">Province of Manitoba</a></li>
+      </ul>
+    </div>
+    <div class="grayMenuTabSection grayMenu">
+      <h3>Resources</h3>
+      <ul>
+       <li><a href="javascript:openWindowFull('http://www.lobbyistregistrar.mb.ca')">Office of the Lobbyist Registrar for Manitoba</a></li> 
+       <li><a href="javascript:openWindowFull('http://web2.gov.mb.ca/laws/statutes/ccsm/_pdf.php?cap=L178')">The Lobbyists Registration Act </a></li> 
+       <li><a href="javascript:openWindowFull('http://web2.gov.mb.ca/laws/regs/current/_pdf-regs.php?reg=34/2012')">Lobbyists Registry Regulation</a></li> 
+       <li><a href="javascript:openWindow('/lra/help.do?page_helpfile=contact');">Contact Us</a></li>
+      </ul>
+    </div>
+
+</div>
+<!-- END left-side column -->
+          	<hr/>
+
+			
+			
+			
+			
+			<a name="mainContent"></a>
+
+			
+
+
+
+<!-- START header -->
+<div id="logon">
+ 
+    <!-- START quick links -->
+    <div id="horizontalNavMenu"> 
+    	<h3 class="textHide">Quick Links</h3>
+    		<!--  tiles-extras:getAsString name="logon"/-->
+    		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link type='text/css' href='/lra/css/confirm.css' rel='stylesheet' media='screen' />
+
+
+
+<script type="text/javascript" SRC="/lra/scripts/jquery.simplemodal.js"></script>
+<script type="text/javascript" SRC="/lra/scripts/confirm.js"></script>
+
+<script type="text/javascript">
+	var checkOnLogout = false;
+	var isFrench = false; 
+	$(document).ready(function () {
+		$('.logout').click(function(e) {
+			if ( checkOnLogout == true ) {
+				e.preventDefault();
+				var url = this.href; 
+				//console.log('url ', this.href); 
+				if ( isFrench == true ) {
+					confirm("Devez-vous vraiment fermer la session?<br/><br/>Si vous examiniez une d&eacute;claration que vous avez d&eacute;j&agrave; certifi&eacute;e et" + 
+							" soumise et que vous avez fait <i>des changements</i> &agrave; cette d&eacute;claration aujourd'hui, ces changements font maintenant partie" + 
+							" de votre inscription donc vous ne devez PAS fermer la session. Cliquez sur &laquo; Annuler &raquo; puis attestez de l'exactitude" + 
+							" des changements et soumettez-les.<br/><br/>Si vous examiniez une d&eacute;claration que vous avez d&eacute;j&agrave; certifi&eacute;e et soumise" + 
+							" et que vous n'avez fait <i>aucun</i> changement &agrave; cette d&eacute;claration aujourd'hui, vous pouvez cliquer sur &laquo; OK &raquo; pour fermer" + 
+							" la session.", function () {
+						window.location.assign(url);
+					});
+					$('.simplemodal-container').css('height', '400px');
+				} else {
+					confirm("Are you sure you should logoff?<br/><br/>If you were reviewing a return which you have previously certified and" + 
+							" submitted and have made <i>any</i> changes to that return today, those changes are now part of your registration" + 
+							" so you should NOT logoff. Click \"Cancel\" then certify and submit your changes.<br/><br/>If you were reviewing a return which" + 
+							" you have previously certified and submitted and have made <i>no</i> changes to that return today, you may click \"OK\" to" + 
+							" logoff.", function () {
+						window.location.assign(url);
+					});
+					$('.simplemodal-container').css('height', '350px');
+				}
+			};
+		});
+	});
+</script>
+
+<!-- confirm modal content -->
+
+<div id='confirm'>
+	<div class='header'><span></span></div>
+	<div class='message'></div>
+	<div class='buttons'>
+		
+		<div class='no simplemodal-close'>Cancel</div><div class='yes'>Ok</div>
+		
+	</div>
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"
+	class="logon">
+	<tr>
+		<td align="left">
+			 
+			
+				<img src="/lra/images/icons/lock_open.gif">
+			
+		</td>
+		<td align="left">You are not logged on.</td>
+		
+			<td align="right">
+				Existing account holders may logon here:&nbsp;
+			</td>
+		
+		<td align="left" width="75">
+			
+			
+				
+				
+				<a href="/lra/common/logon.do">
+					<img src="/lra/images/buttons/but_user_bar_logon.gif" alt="logon" align="texttop">
+				</a>
+				
+			
+		</td>
+	</tr>
+</table>
+ 
+    	<hr/>
+    </div>
+    <!-- END quick links -->
+</div>
+<!-- END header -->
+			
+			<hr/>
+			
+			<div id="content">
+				
+				
+				
+				<div id="mainColumn">
+					
+						<h1 class="textHide">Ministry of Attorney General</h1>
+					
+					
+					
+						
+
+
+
+
+
+<!-- Print This Page script -->
+<div id="popupprint">
+	<a href="javascript:window.print();">Printer Version</a><a href="javascript:window.print();"><img src="/lra/images/icons/print.gif" alt="Print this page" width="18" height="15"></a>
+</div>
+
+					
+					
+
+					
+
+							<div id="popuphelp">
+								<a href="javascript:openWindow('/lra/help.do?page_helpfile=public');">LRA Help</a><a href="javascript:openWindow('/lra/help.do?page_helpfile=public');"><img src="/lra/images/buttons/bMiniHelp.gif"></a>
+							</div>
+					
+					
+					<!-- START body -->
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Lobbyists Activity Registration - &nbsp;
+
+
+Organization
+
+</h2>
+
+
+	
+
+<p><b>Registration ID:</b> 264059<br>
+
+
+
+<b>Submitted by lobbyist on:</b>&nbsp;September 12, 2018 10:09 AM<br>
+<b>Accepted by Registrar on:</b>&nbsp;September 12, 2018 03:24 PM</p>
+
+<h3>Senior Officer Contact Information</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr valign="top">
+		<td width="300">Surname:</td>
+		<td class="populated">
+			Fralick
+		</td>		
+	</tr>
+	<tr valign="top">
+		<td>First Name:</td>		
+		<td class="populated">
+			Pamela
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>Middle Name:</td>
+		<td class="populated">
+			C
+		</td>		
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+	Normal: 
+	Attr: 
+	Request: 
+ -->
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr valign="top">
+		<td width="300">Address:</td>
+		<td class="populated">
+			55 Metcalfe St.
+			
+				<br/>
+				Suite 1220
+			
+			
+			<br/>
+			Ottawa,&nbsp;ON
+			
+			
+			&nbsp;
+			K1P 6L5
+			<br/>
+			
+			
+				Canada
+			
+			
+		</td>		
+	</tr>
+	<tr valign="top">
+		<td>E-mail Address:</td>
+		<td class="populated">
+			pfralick@imc-mnc.ca
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>Phone Number:</td>
+		<td class="populated">
+			613 236-0455
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>Fax Number:</td>
+		<td class="populated">
+			613 236-6756
+		</td>
+	</tr>
+</table>
+
+
+<h3>Organization Information</h3>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr valign="top">
+		<td width="300">Name of organization:</td>
+		<td class="populated">
+			Innovative Medicines Canada (M&eacute;dicaments novateurs Canada)
+		</td>		
+	</tr>
+	<tr valign="top">
+		<td>Organization business or activity summary:</td>		
+		<td class="populated">
+			Innovative Medicines Canada (formerly known as RxandD) represents the
+innovative pharmaceutical industry in Canada. We help our members
+discover, develop, and deliver innovative medicines and vaccines. Our
+membership consists of more than 50 companies, from established
+organizations to fledgling startups, all of whom are revolutionizing
+healthcare through the discovery and development of new medicines and
+vaccines. Guided by a strict Code of Ethical Practices, we work with
+governments, insurance companies, healthcare professionals and
+stakeholders to advance the field and enhance the wellbeing of
+Canadians. We are committed to being valued partners for the healthcare
+system in Canada. We aim to achieve these goals by forming effective
+alliances and supporting policies, improving the regulatory environment,
+widen access to innovative medicines and protect intellectual property
+in Canada. We believe in ensuring that Canadians have access to the
+innovative treatments they need and that our activities are a
+fundamental part of safeguarding our healthcare system for future
+generations. Our work allows our members to focus on what matters:
+delivering better healthcare solutions to Canadians.
+		</td>
+	</tr>		
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+	Normal: 
+	Attr: 
+	Request: 
+ -->
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr valign="top">
+		<td width="300">Address:</td>
+		<td class="populated">
+			55 Metcalfe St.
+			
+				<br/>
+				Suite 1220
+			
+			
+			<br/>
+			Ottawa,&nbsp;ON
+			
+			
+			&nbsp;
+			K1P 6L5
+			<br/>
+			
+			
+				Canada
+			
+			
+		</td>		
+	</tr>
+	<tr valign="top">
+		<td>E-mail Address:</td>
+		<td class="populated">
+			pclement@imc-mnc.ca
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>Phone Number:</td>
+		<td class="populated">
+			613 236-0455
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>Fax Number:</td>
+		<td class="populated">
+			613 236-6756
+		</td>
+	</tr>
+</table>
+
+
+<h3>Organization Lobbying Activity</h3>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr valign="top">
+		<td width="300">Registration start date:</td>
+		<td class="populated">
+			Locale not set 
+		</td>		
+	</tr>
+	<tr valign="top">
+		<td>Registration end date:</td>		
+		<td class="populated">
+			Locale not set 
+		</td>
+	</tr>		
+</table>
+
+<h3>Organization's Relevant Interfaces</h3>
+
+
+
+	<h3>Description of Organization</h3>
+	
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr valign="top">
+			<td width="300">Description of Organization:</td>
+			<td class="populated">
+				Innovative Medicines Canada (formerly known as RxandD) is comprised of
+companies of all sizes, and is part of the global pharmaceutical
+industry whose members are responsible for developing in excess of 90%
+of the medicines available today.  The categories of Memberships are:
+(a) Full Membership, (b) Biopharmaceutical Membership, (c) Medical
+Research Affiliate Membership, and (d) Associate Membership.
+			</td>		
+		</tr>			
+	</table>
+
+	
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					 Freedman, Jamie&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					Fasano, Frederic&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					Halyk, Chris&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					Helou, John&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					Hilberdink, Brian&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					Kanti, Alok&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					Lassignardie, Stephane&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					Matar, Lisa&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					Miller, Ronnie&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					Rhines, Jared&nbsp;&nbsp;  
+				</td>		
+			</tr>
+		
+			<tr valign="top">
+				<td width="300">Name of Officer:</td>
+				<td class="populated">
+					van Acker, Anna&nbsp;&nbsp;  
+				</td>		
+			</tr>
+					
+	</table>
+
+    
+	
+
+
+
+<h3>Government or Government Agency Funding</h3>
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="results" width="100%">
+
+	<tr>
+		<th><a href="/lra/reporting/public/registrar/view.do?method=sortGF&sort=NAME">Name of Government or Government Agency</a></th>
+		<th><a href="/lra/reporting/public/registrar/view.do?method=sortGF&sort=AMOUNT">Amount of Funding</a></th>
+	</tr>
+	
+	
+	
+	
+		<tr><td colspan="2">No records found.</td></tr>
+	
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Organization Lobbyists</h3>
+
+
+<form id="reportchanges" name="reportchanges" action="/lra/registration/org/reportchanges.do;jsessionid=42C15602205EA6084E7C20FEEDC273C6" method="post">
+<input type="hidden" name="struts.token.name" value="token" />
+<input type="hidden" name="token" value="FHGMDTLP9GQFH2QT39K6DEZ51M49Q2C4" />
+	<input type="hidden" id="method" name="method" value="next">
+	<input type="hidden" id="row" name="row" value="-1">
+	
+	<table cellpadding="0" cellspacing="0" border="0" class="results" width="100%">
+		<tr>
+			<th>Lobbyist Name</th>
+			<th>Date Added</th>
+			<th>Date Inactivated</th>
+			<th align="center">Active</th>
+			<th>Lobbying Activities</th>		
+		</tr>	
+		
+							<tr class="evenrow" valign="top">
+							
+						
+						
+						<td >
+						Anne,&nbsp;Babineau
+
+						</td>
+						
+						
+						<td >
+						September 12, 2018
+
+						</td>
+						
+						<td >
+						April 4, 2019
+
+						</td>
+						
+						<td align="center" >
+							
+						 	<img src="/lra/images/buttons/unchecked.gif">
+							
+						</td>
+						
+						
+						
+						<td align="center" >
+							<a href="javascript:openWindow('/lra/reporting/registrar/orglobbyistpopup.do?seqNo=264334&roleSeqNo=264332&regId=264059')">
+								
+								
+								<img src="/lra/images/buttons/button_view.gif">
+								
+							</a>
+						</td>
+						
+						
+						
+						
+						</tr>
+			   
+							<tr valign="top">
+							
+						
+						
+						<td >
+						Fralick,&nbsp;Pamela
+
+						</td>
+						
+						
+						<td >
+						September 12, 2018
+
+						</td>
+						
+						<td >
+						April 4, 2019
+
+						</td>
+						
+						<td align="center" >
+							
+						 	<img src="/lra/images/buttons/unchecked.gif">
+							
+						</td>
+						
+						
+						
+						<td align="center" >
+							<a href="javascript:openWindow('/lra/reporting/registrar/orglobbyistpopup.do?seqNo=264590&roleSeqNo=264588&regId=264059')">
+								
+								
+								<img src="/lra/images/buttons/button_view.gif">
+								
+							</a>
+						</td>
+						
+						
+						
+						
+						</tr>
+			   
+							<tr class="evenrow" valign="top">
+							
+						
+						
+						<td >
+						German,&nbsp;Alison
+
+						</td>
+						
+						
+						<td >
+						September 12, 2018
+
+						</td>
+						
+						<td >
+						April 4, 2019
+
+						</td>
+						
+						<td align="center" >
+							
+						 	<img src="/lra/images/buttons/unchecked.gif">
+							
+						</td>
+						
+						
+						
+						<td align="center" >
+							<a href="javascript:openWindow('/lra/reporting/registrar/orglobbyistpopup.do?seqNo=264186&roleSeqNo=264184&regId=264059')">
+								
+								
+								<img src="/lra/images/buttons/button_view.gif">
+								
+							</a>
+						</td>
+						
+						
+						
+						
+						</tr>
+			   
+							<tr valign="top">
+							
+						
+						
+						<td >
+						Monteith,&nbsp;Glenn
+
+						</td>
+						
+						
+						<td >
+						September 12, 2018
+
+						</td>
+						
+						<td >
+						January 4, 2019
+
+						</td>
+						
+						<td align="center" >
+							
+						 	<img src="/lra/images/buttons/unchecked.gif">
+							
+						</td>
+						
+						
+						
+						<td align="center" >
+							<a href="javascript:openWindow('/lra/reporting/registrar/orglobbyistpopup.do?seqNo=264465&roleSeqNo=264463&regId=264059')">
+								
+								
+								<img src="/lra/images/buttons/button_view.gif">
+								
+							</a>
+						</td>
+						
+						
+						
+						
+						</tr>
+			   
+							<tr class="evenrow" valign="top">
+							
+						
+						
+						<td >
+						Sutherland,&nbsp;Robert
+
+						</td>
+						
+						
+						<td >
+						September 12, 2018
+
+						</td>
+						
+						<td >
+						April 4, 2019
+
+						</td>
+						
+						<td align="center" >
+							
+						 	<img src="/lra/images/buttons/unchecked.gif">
+							
+						</td>
+						
+						
+						
+						<td align="center" >
+							<a href="javascript:openWindow('/lra/reporting/registrar/orglobbyistpopup.do?seqNo=264063&roleSeqNo=264061&regId=264059')">
+								
+								
+								<img src="/lra/images/buttons/button_view.gif">
+								
+							</a>
+						</td>
+						
+						
+						
+						
+						</tr>
+			   
+				
+			
+			
+	</table>
+	<!--  end cut -->
+</form>
+
+
+
+
+
+
+<script type="text/javascript">
+
+	function callbackRejectRegistration() {
+		window.location.href =  "/lra/reporting/registrar/review.do?method=reject&registrationId=264059";
+	}
+
+	function rejectRegistration() {
+		confirmDialog("Are you sure you want to reject this return?", callbackRejectRegistration);
+		return false;
+	}
+	
+
+</script>
+
+
+
+<div class="buttonbar bordertop">
+	<div class="left">
+	 	
+	 		<a href="javascript:history.back();">
+	 		
+	
+			
+			
+				<img src="/lra/images/buttons/button_back.gif">
+			
+					
+		</a>
+		
+	</div>	
+	<div class="right">
+		
+	</div>
+</div>
+		
+ 
+					<!-- END body -->
+				</div>
+				<hr/>
+				
+				
+				
+			</div>
+			<hr/>
+			
+			
+			
+
+
+
+
+
+<!-- START footer -->
+<div id="footer">
+    <div class="backToTop"> <a href="javascript:window.scrollTo(0,0);"><img src="/lra/images/icons/arrowTop.gif" width="15" height="15" alt="Back to top">Top</a></div>
+        <div id="footerBG">
+        <table width="100%">
+        	<tr>
+        		<td width="162px" valign="top" style="text-align: left;"> 
+            	LRA Version - 3.0.1
+                </td>
+                <td class="footerText">
+                	<b><i>Disclaimer:</i></b> The Manitoba Office of the Lobbyist Registrar is not responsible for the content of any external links from this Web site.<br/><b><i>Limitation of Liability:</i></b> The Manitoba Office of the Lobbyist Registrar accepts no liability or blame for damages to any person or business entity because of using this website, its information or any website linked to it.
+                </td>
+            </tr>
+        </table>         	
+    </div>
+</div>
+<!-- END footer -->
+		</div>
+		
+		<script>checkMTPCookie();</script> 
+		
+		 
+		
+    </body>
+</html>
